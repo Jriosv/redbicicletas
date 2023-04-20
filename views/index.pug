@@ -4,6 +4,26 @@ block content
   h1= title
   p Welcome to #{title}!!
 
+  script(src="https://accounts.google.com/gsi/client", async, defer)
+
+  script(src="/javascripts/auth.js")
+
+  div(id="g_id_onload",
+      data-client_id="1002985450292-dgq7n1gmo12l81ufbbaqspcn1id9cqfm.apps.googleusercontent.com",
+      data-callback="onSignIn")
+
+  div(class="g_id_signin",
+      data-type="standard",
+      data-ux_mode="popup"
+      data-shape="pill",
+      data-theme="filled_blue",
+      data-text="signin_with",
+      data-size="medium",
+      data-width="40",
+      data-logo_alignment="left")
+
+  a(href="#" onclick="signOut();") Sign out
+    
   div#map
   script(src='/javascripts/map.js')
   
