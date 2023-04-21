@@ -9,4 +9,59 @@ a {
 
 #map{
   height: 400px;
-} 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.g_id_signin {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 0 10px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu ul li a:hover {
+  background-color: #fff;
+  color: #333;
+}
