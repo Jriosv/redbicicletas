@@ -3,8 +3,11 @@ extends layout
 
 block head
   script(src="https://accounts.google.com/gsi/client", async, defer)
+  
 
 block content
+  script(src="/javascripts/auth.js")
+
   div.container
     div.row
       div.col-md-4.offset-md-4
@@ -28,7 +31,7 @@ block content
 
             a(href="/logout") Sign out
 
-            script(src="/javascripts/auth.js")
+            
     
     
 
